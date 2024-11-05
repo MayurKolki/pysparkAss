@@ -43,7 +43,6 @@ workload = [
 workload_df = spark.createDataFrame(workload, ["name", "project", "hours"])
 
 
-# Calculate total hours per employee and categorize workload
 workload_status_df = (
     workload_df
     .groupBy("name")
