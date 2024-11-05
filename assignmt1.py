@@ -12,7 +12,7 @@ arr = [10,20,30,40,50,60,70,80,90]
 rdd1 = sc.parallelize(arr)
 avg=rdd1.mean()
 print("output" ,avg)
-
+print("adding to git ")
 
 rdd = sc.parallelize([1, 2, 3, 4, 5])
 total_sum = rdd.reduce(lambda x, y: x + y)
