@@ -54,6 +54,8 @@ workload_status_df = (
         .otherwise("Underutilized"))
 )
 
+workload_status_df.show()
+
 workload_count_df = (
     workload_status_df
     .groupBy("workload_status")
